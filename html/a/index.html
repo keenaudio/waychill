@@ -1,0 +1,49 @@
+<html>
+<head>
+<link href="/chill.css" rel="stylesheet" type="text/css" />
+<style>
+    video {
+       width: 640px;
+       height: 360px;
+       display: block;
+       border: 2px black solid;
+    }
+
+    .slide {
+    	max-width: 800px;
+    }
+</style>
+
+</head>
+<body>
+<a href="/">way chill</a>
+<h2>Studio A</h2>
+<hr/>
+
+<div class="slide">
+
+<h3>Web / Desktop</h3>
+
+<video data-dashjs-player autoplay src="/dash/obs.mpd" controls></video>
+<p>
+Embedded player shows the <a class="link" href="/dash/obs.mpd">DASH Stream</a> on modern desktop browsers. Average delay is about 20 seconds</p>
+
+<p>If you have VLC player try the <a class="link" href="rtmp://waychill.com/mytv/obs">RTMP Stream</a> which has a much smaller delay. You may need to unblock port <b>1935</b> on your firewall.</p>
+
+<p>The <a class="link" href="http://waychill.com/hls/obs.m3u8">HLS Stream</a> also works great in VLC.</p>
+</div>
+
+<div class="slide">
+
+
+<h3>iPhone / Android</h3>
+Use the 
+<a class="link" href="http://waychill.com/hls/obs.m3u8">HLS Stream</a> for most reliable quality. Average delay is about 20 seconds.
+
+<p>If you have VLC player you can try the <a class="link" href="rtmp://waychill.com/mytv/obs">RTMP Stream</a> which has a smaller delay. You may need to unblock port <b>1935</b> on your firewall.</p>
+</div>
+<hr/>
+<a href="/live_stat.html" target="_blank">Live Stats</a>
+<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+</body>
+</html>
