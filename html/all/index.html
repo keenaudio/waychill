@@ -19,9 +19,8 @@
 
 </head>
 <body>
-<a href="/">way chill</a> | 
-<b>Studio A</b>
-<div>Live from my basement and/or living room</div>
+<a href="/">way chill</a>
+<h2>1</h2>
 <hr/>
 
 <div style="position: relative;">
@@ -32,23 +31,35 @@
 </video>
 <div>
 
+<h2>2</h2>
 <hr/>
 
-<div class="slide">
+<div style="position: relative;">
+<video id=stream width=1280 height=720 class="video-js vjs-default-skin" controls>
+  <source
+     src="http://waychill.com/hls/2.m3u8"
+     type="application/x-mpegURL">
+</video>
+<div>
 
-<a class="link" href="http://waychill.com/hls/1.m3u8">M3U Stream</a>
-</div>
+<h2>3</h2>
+<hr/>
 
-<div class="slide">
+<div style="position: relative;">
+<video id=stream width=1280 height=720 class="video-js vjs-default-skin" controls>
+  <source
+     src="http://waychill.com/hls/3.m3u8"
+     type="application/x-mpegURL">
+</video>
+<div>
 
-<a href="/live_stat.html" target="_blank">Stats</a>
 <!--
 <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.8.3/videojs-contrib-hls.js"></script>
 <script>
 var player = videojs('stream');
-player.play();
+//player.play();
 </script>
 
 </body>

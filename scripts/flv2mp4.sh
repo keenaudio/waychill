@@ -8,7 +8,7 @@ DST="$2"
 
 # up front options
 #OPTS='-loglevel info -framerate 15'
-OPTS='-y'
+OPTS='-y -loglevel debug'
 
 # video options
 VOPTS='-vcodec copy -movflags +faststart'
